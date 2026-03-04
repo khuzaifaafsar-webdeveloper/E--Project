@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - CARVAN</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f5f4f9;
+}
+
+/* Hero Section */
+.about-hero{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+               url("car-bg.jpg");
+    background-size:cover;
+    background-position:center;
+    height:60vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:rgb(255, 255, 255);
+}
+
+.about-hero h1{
+    font-size:48px;
+    animation:fadeDown 1.5s ease-in-out;
+}
+
+.about-hero p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* About Content */
+.about-content{
+    display:flex;
+    gap:40px;
+    padding:70px 10%;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    line-height:1.7;
+    color:#555;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* Stats Section */
+.stats{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    padding:50px 10%;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+.stat-box{
+    margin:15px;
+}
+
+.stat-box h3{
+    font-size:32px;
+    color:#ff3c00;
+}
+
+/* Mission Vision */
+.mission-vision{
+    display:flex;
+    gap:30px;
+    padding:60px 10%;
+    flex-wrap:wrap;
+}
+
+.mv-box{
+    flex:1;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Animation */
+@keyframes fadeDown{
+    from{opacity:0; transform:translateY(-40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .about-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .stats{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .mission-vision{
+        flex-direction:column;
+    }
+
+    .about-hero h1{
+        font-size:30px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="about-hero">
+    <div>
+        <h1>About CARVAN</h1>
+        <p>Driving Your Dreams With Trust & Transparency</p>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="about-content">
+    <div class="about-text">
+        <h2>Who We Are</h2>
+        <p>
+            CARVAN is the largest online car marketplace designed to serve families,
+            businesses, and individuals. We provide detailed specifications,
+            high-quality images, and complete vehicle comparisons.
+        </p>
+        <p>
+            Our mission is to simplify the car buying journey by connecting
+            customers with trusted brands and verified pre-owned listings.
+        </p>
+    </div>
+
+    <div class="about-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0ydf1NDEO8aVpfwdygWpS4ZvVexsjFgOjSA&s" alt="Car Showroom">
+    </div>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+    <div class="stat-box">
+        <h3>500k+</h3>
+        <p>Cars Listed</p>
+    </div>
+    <div class="stat-box">
+        <h3>500k+</h3>
+        <p>Brands Available</p>
+    </div>
+    <div class="stat-box">
+        <h3>100K+</h3>
+        <p>Happy Customers</p>
+    </div>
+    <div class="stat-box">
+        <h3>15+</h3>
+        <p>Years Experience</p>
+    </div>
+</section>
+
+<!-- Mission Vision -->
+<section class="mission-vision">
+    <div class="mv-box">
+        <h2>Our Mission</h2>
+        <p>
+            To provide accurate, transparent, and updated car information
+            that empowers buyers to make smart purchasing decisions.
+        </p>
+    </div>
+
+    <div class="mv-box">
+        <h2>Our Vision</h2>
+        <p>
+            To become the most trusted and customer-focused online car
+            marketplace globally.
+        </p>
+    </div>
+</section>
+
+</body>
+</html>
