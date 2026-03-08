@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | CARVAN</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#1f4037,#99f2c8);
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+/* Header */
+
+header{
+text-align:center;
+color:white;
+padding:30px;
+}
+
+header h1{
+font-size:40px;
+letter-spacing:3px;
+}
+
+header p{
+opacity:0.9;
+}
+
+/* Main Container */
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+padding:40px 0;
+}
+
+/* Glass Cards */
+
+.card{
+flex:1;
+min-width:320px;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(10px);
+border-radius:15px;
+padding:30px;
+color:white;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Contact Info */
+
+.card h2{
+margin-bottom:20px;
+font-size:28px;
+}
+
+.info p{
+margin:12px 0;
+font-size:16px;
+}
+
+.info a{
+color:#fff;
+text-decoration:underline;
+}
+
+/* Form */
+
+form input,
+form textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:6px;
+outline:none;
+}
+
+form textarea{
+resize:none;
+}
+
+button{
+background:#000;
+color:white;
+border:none;
+padding:12px;
+width:100%;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#333;
+transform:scale(1.03);
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+color:white;
+padding:15px;
+font-size:14px;
+margin-top:auto;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.container{
+flex-direction:column;
+padding:20px;
+}
+
+header h1{
+font-size:32px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>CARVAN</h1>
+<p>Connect With Our Car Experts</p>
+</header>
+
+<div class="container">
+
+<div class="card info">
+
+<h2>Contact Information</h2>
+
+<p><strong>📍 Address:</strong><br>
+CARVAN Car Market<br>
+Main Auto Market Road<br>
+Karachi, Pakistan
+</p>
+
+<p><strong>📞 Phone:</strong> +92 300 1234567</p>
+
+<p><strong>📧 Email:</strong>
+<a href="mailto:info@carvan.com">info@carvan.com</a>
+</p>
+
+<p>Have questions about cars, brands, or pricing? Our team is ready to assist you.</p>
+
+</div>
+
+<div class="card">
+
+<h2>Send Message</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="text" placeholder="Subject">
+
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 CARVAN | Largest Online Car Market
+</footer>
+
+</body>
+</html>
